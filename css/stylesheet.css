@@ -1,0 +1,74 @@
+/* Main Styling */
+html { font-size: 16px; background-color: #1F4D2C; }
+html body { font-family: 'gothambook'; overflow-x: hidden; }
+
+/* Typography */
+h1 { font-size: 5.375rem; /* 86px */ font-family: 'henrietteheavy'; line-height: 5rem; /* 80px */ margin-bottom: 2rem; }
+h2 { font-size: 3.625rem; /* 58px */ font-family: 'henrietteblack'; line-height: 3.625rem; /* 58px */ margin-bottom: 2rem; }
+h3 {}
+p { font-size: 1.375rem; /* 22px */ font-family: 'gothambook'; line-height: 1.875rem; /* 30px */ margin-bottom: 1rem; }
+p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-height: 1.875rem; /* 30px */ letter-spacing: 0.125rem; }
+
+/* Page styling */
+.header { background-image: url('../img/Rectangle 1.jpg'); color: #fff; }
+.header .row { align-items: center; }
+.header .row .left { padding: 10%; }
+.header .row .right { padding: 5%; }
+.header .logo { padding-bottom: 3rem; }
+
+.soil { background-image: url('../img/Section 2 IMG.jpg'); color: #fff; }
+.soil .row { justify-content: flex-end; }
+.soil .row .right { background-color: rgba(31, 77, 44, 0.6); padding: 10%; }
+.soil h2 { margin-bottom: 3rem; }
+
+.products { text-align: center; padding: 10% 0; }
+.products .row [class*="col-"] { padding: 0 10%; }
+.products p { padding-bottom: 4rem; }
+
+.leadership { background-image: url('../img/Rectangle 6.jpg'); background-position-x: 20%; color: #fff; }
+.leadership .row .left { padding: 10%; }
+.leadership .label { color: #C1E3FF; font-family: 'gothambold'; padding-bottom: 4rem; }
+.leadership .quote { font-family: 'henriettemedium'; }
+.leadership .quote .before { margin-left: -3rem; padding-right: 1rem; }
+.leadership .credit { font-family: 'gothamblack'; font-size: 1.125rem; /* 18px */ line-height: 1.375; /* 22px */ letter-spacing: 0.0675rem; }
+
+/* Carousel styling */
+.slick-slider .slick-list { padding-bottom: 3rem; }
+.slick-slider .slick-arrow { width: 2rem; height: 3rem; right: 0; }
+.slick-slider .slick-arrow:before { content: ''; display: block; width: inherit; height: inherit; background-image: url('../img/arrow.svg'); opacity: 1; }
+.slick-slider .slick-arrow.slick-prev { left: -5%; }
+.slick-slider .slick-arrow.slick-next { right: -5%; }
+.slick-slider .slick-arrow.slick-prev:before { transform: scaleX(-1); }
+.slick-slider .slick-arrow.slick-disabled:before { opacity: 0.25; }
+.slick-slider .slick-dots li { margin: 0 0.5rem; }
+.slick-slider .slick-dots li button:before { background-color: #eeeeee; content: ''; border-radius: 999px; width: 1.25rem; height: 1.25rem; opacity: 1; }
+.slick-slider .slick-dots li.slick-active button:before { background-color: #1F4D2C; }
+
+/* Layout styling */
+section { background-size: cover; background-position: center; }
+section img { max-width: 100%; }
+
+/* Mobile styling */
+@media (max-width: 576px) {
+    /* Typography */
+    h1 { font-size: 3.75rem; /* 60px */ line-height: 3.125rem; /* 50px */ }
+    h2 { font-size: 2.5rem; /* 40px */ line-height: 2.5rem; /* 40px */ }
+    p { font-size: 1.125rem; /* 18px */ line-height: 1.375; /* 22px */  }
+
+    /* Page styling */
+    .header { text-align: center; overflow: hidden; }
+    .header .product { margin-bottom: -50%; }
+
+    .leadership { background-image: url('../img/Rectangle 24.jpg'); text-align: center; }
+    .leadership .row .left { padding-bottom: 150%; }
+    .leadership .quote .before { margin-right: 0; padding: 0; }
+}
+
+/* Font families */
+@font-face { font-family: 'henriettebold'; src: url('../fonts/henriette_bold-webfont.woff2') format('woff2'), url('../fonts/henriette_bold-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'henrietteblack'; src: url('../fonts/henriette_black-webfont.woff2') format('woff2'), url('../fonts/henriette_black-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'henrietteheavy'; src: url('../fonts/henriette_heavy-webfont.woff2') format('woff2'), url('../fonts/henriette_heavy-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'henriettemedium'; src: url('../fonts/henriette_medium-webfont.woff2') format('woff2'), url('../fonts/henriette_medium-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'gothambook'; src: url('../fonts/gothambook-webfont.woff2') format('woff2'), url('../fonts/gothambook-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'gothambold'; src: url('../fonts/gotham-bold-webfont.woff2') format('woff2'), url('../fonts/gotham-bold-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'gothamblack'; src: url('../fonts/gotham-black-webfont.woff2') format('woff2'), url('../fonts/gotham-black-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
