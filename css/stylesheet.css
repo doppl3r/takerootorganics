@@ -1,11 +1,10 @@
 /* Main Styling */
 html { font-size: 16px; background-color: #1F4D2C; }
-html body { font-family: 'gothambook'; overflow-x: hidden; }
+html body { font-family: 'gothambook'; }
 
 /* Typography */
 h1 { font-size: 5.375rem; /* 86px */ font-family: 'henrietteheavy'; line-height: 5rem; /* 80px */ margin-bottom: 2rem; }
 h2 { font-size: 3.625rem; /* 58px */ font-family: 'henrietteblack'; line-height: 3.625rem; /* 58px */ margin-bottom: 2rem; }
-h3 {}
 p { font-size: 1.375rem; /* 22px */ font-family: 'gothambook'; line-height: 1.875rem; /* 30px */ margin-bottom: 1rem; }
 p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-height: 1.875rem; /* 30px */ letter-spacing: 0.125rem; }
 
@@ -25,12 +24,19 @@ p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-hei
 .products .row [class*="col-"] { padding: 0 10%; }
 .products p { padding-bottom: 4rem; }
 
-.leadership { background-image: url('../img/Rectangle 6.jpg'); background-position-x: 20%; color: #fff; }
+.leadership { background-image: url('../img/Rectangle 6.jpg'); background-position-x: 0%; color: #fff; }
+.leadership .row { max-width: 1280px; margin: auto; }
 .leadership .row .left { padding: 10%; }
 .leadership .label { color: #C1E3FF; font-family: 'gothambold'; padding-bottom: 4rem; }
 .leadership .quote { font-family: 'henriettemedium'; }
 .leadership .quote .before { margin-left: -3rem; padding-right: 1rem; }
 .leadership .credit { font-family: 'gothamblack'; font-size: 1.125rem; /* 18px */ line-height: 1.375; /* 22px */ letter-spacing: 0.0675rem; }
+
+.green-thumb { background-color: #F3F2EE; text-align: center; padding: 5% 0; }
+.green-thumb .row { justify-content: center; max-width: 860px; margin: auto; }
+.green-thumb img { margin-bottom: 4rem; }
+.green-thumb h2 { color: #1F4D2C; font-size: 5.375rem; /* 86px */ font-family: 'henrietteheavy'; line-height: 5.375rem; /* 86px */ }
+.green-thumb h2 em { color: #6CBF4D; }
 
 /* Carousel styling */
 .slick-slider .slick-list { padding-bottom: 3rem; }
@@ -45,8 +51,16 @@ p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-hei
 .slick-slider .slick-dots li.slick-active button:before { background-color: #1F4D2C; }
 
 /* Layout styling */
-section { background-size: cover; background-position: center; }
+section { background-size: cover; background-position: center; overflow-x: hidden; }
 section img { max-width: 100%; }
+
+footer { overflow-x: hidden; }
+footer .center { text-align: center; }
+footer .row { align-items: center; }
+footer .row [class*="col-"] { padding: 5%; }
+footer ul { padding: 0px; list-style: none; margin: 0; }
+footer ul li { color: #1F4D2C; }
+footer ul li a { color: inherit; text-transform: uppercase; }
 
 /* Mobile styling */
 @media (max-width: 576px) {
@@ -59,9 +73,22 @@ section img { max-width: 100%; }
     .header { text-align: center; overflow: hidden; }
     .header .product { margin-bottom: -50%; }
 
+    .soil .row .right { padding: 40% 10%; }
+
+    .products { padding: 20% 0; }
+    .products .row [class*="col-"] { padding: 0 15%; }
+
     .leadership { background-image: url('../img/Rectangle 24.jpg'); text-align: center; }
     .leadership .row .left { padding-bottom: 150%; }
-    .leadership .quote .before { margin-right: 0; padding: 0; }
+    .leadership .quote .before { margin-left: 0; padding: 0; }
+
+    .green-thumb { text-align: left; padding: 20% 0; }
+    .green-thumb img { display: block; margin: auto; }
+    .green-thumb h2 { font-size: 2.5rem; line-height: 2.5rem; }
+
+    /* Layout styling */
+    footer { text-align: center; padding: 15% 10%; }
+    footer .row { flex-direction: column-reverse; }
 }
 
 /* Font families */
