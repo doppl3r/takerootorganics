@@ -7,6 +7,7 @@ h1 { font-size: 5.375rem; /* 86px */ font-family: 'henrietteheavy'; line-height:
 h2 { font-size: 3.625rem; /* 58px */ font-family: 'henrietteblack'; line-height: 3.625rem; /* 58px */ margin-bottom: 2rem; }
 p { font-size: 1.375rem; /* 22px */ font-family: 'gothambook'; line-height: 1.875rem; /* 30px */ margin-bottom: 1rem; }
 p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-height: 1.875rem; /* 30px */ letter-spacing: 0.125rem; }
+ul { font-size: 1.375rem; /* 22px */ font-family: 'gothambook'; line-height: 1.875rem; /* 30px */ margin-bottom: 1rem; }
 
 /* Page styling */
 .header { background-image: url('../img/Rectangle 1.jpg'); color: #fff; }
@@ -38,6 +39,15 @@ p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-hei
 .green-thumb h2 { color: #1F4D2C; font-size: 5.375rem; /* 86px */ font-family: 'henrietteheavy'; line-height: 5.375rem; /* 86px */ }
 .green-thumb h2 em { color: #6CBF4D; }
 
+.banner { background-image: url('../img/banner.jpg'); padding: 3rem 0; }
+
+.content { padding: 6rem 0; }
+.content h1 { color: #1F4D2C; margin-bottom: 7.5rem; }
+.content h2 { color: #3F4240; font-family: 'gothamblack'; text-transform: uppercase; font-size: 1.75rem; line-height: 1.75rem; margin-bottom: 2rem; }
+.content p { color: #3F4240; margin-bottom: 4rem; }
+.content p strong { font-family: 'gothamblack' }
+.content ul { color: #3F4240; margin-bottom: 4rem; }
+
 /* Carousel styling */
 .slick-slider .slick-list { padding-bottom: 3rem; }
 .slick-slider .slick-arrow { width: 2rem; height: 3rem; right: 0; }
@@ -54,12 +64,11 @@ p strong { font-size: 1.5rem; /* 24px */ font-family: 'henrietteblack'; line-hei
 section { background-size: cover; background-position: center; overflow-x: hidden; }
 section img { max-width: 100%; }
 
-footer { overflow-x: hidden; }
-footer .center { text-align: center; }
+footer { overflow-x: hidden; border-top: 0.125rem solid #EEEEEE; }
 footer .row { align-items: center; }
-footer .row [class*="col-"] { padding: 5%; }
+footer .row [class*="col-"] { padding-top: 5%; padding-bottom: 5%; }
 footer ul { padding: 0px; list-style: none; margin: 0; }
-footer ul li { color: #1F4D2C; }
+footer ul li { color: #1F4D2C; font-size: 0.875rem; line-height: 1.5rem; }
 footer ul li a { color: inherit; text-transform: uppercase; }
 
 /* Mobile styling */
