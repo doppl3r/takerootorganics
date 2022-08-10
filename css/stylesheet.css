@@ -25,7 +25,7 @@ ul { font-size: 1.375rem; /* 22px */ font-family: 'gothambook'; line-height: 1.8
 .products .row [class*="col-"] { padding: 0 10%; }
 .products p { padding-bottom: 4rem; }
 
-.leadership { background-image: url('../img/Rectangle 6.jpg'); background-position-x: 0%; color: #fff; }
+.leadership { background-image: url('../img/Rectangle 6.jpg'); background-position: 0% 0%; color: #fff; }
 .leadership .row { max-width: 1280px; margin: auto; }
 .leadership .row .left { padding: 10%; }
 .leadership .label { color: #C1E3FF; font-family: 'gothambold'; padding-bottom: 4rem; }
